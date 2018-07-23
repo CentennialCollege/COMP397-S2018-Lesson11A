@@ -4,9 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.6.3</string>
-        <key>fileName</key>
-        <string>/Users/thomas/Desktop/COMP397/COMP397-W2018-MailPilotDemo-H/Assets/sprites/MailPilotDemoProject.tps</string>
+        <string>4.8.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -86,7 +84,7 @@
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
-        <uint>1</uint>
+        <uint>0</uint>
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
@@ -179,20 +177,21 @@
             <key>defaultPivotPoint</key>
             <point_f>0.5,0.5</point_f>
             <key>writePivotPoints</key>
-            <false/>
+            <true/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../images/bullet.png</key>
+            <key type="filename">../images/RestartButton.png</key>
+            <key type="filename">../images/StartButton.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>4,4,8,8</rect>
+                <rect>38,13,75,25</rect>
                 <key>scale9Paddings</key>
-                <rect>4,4,8,8</rect>
+                <rect>38,13,75,25</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -209,67 +208,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../images/coin01.png</key>
-            <key type="filename">../images/coin02.png</key>
-            <key type="filename">../images/coin03.png</key>
-            <key type="filename">../images/coin04.png</key>
-            <key type="filename">../images/coin05.png</key>
-            <key type="filename">../images/coin06.png</key>
-            <key type="filename">../images/coin07.png</key>
-            <key type="filename">../images/coin08.png</key>
-            <key type="filename">../images/coin09.png</key>
-            <key type="filename">../images/coin10.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>11,10,22,20</rect>
-                <key>scale9Paddings</key>
-                <rect>11,10,22,20</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">../images/enemy1.png</key>
-            <key type="filename">../images/enemy2.png</key>
-            <key type="filename">../images/enemy3.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>23,19,47,37</rect>
-                <key>scale9Paddings</key>
-                <rect>23,19,47,37</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">../images/explosion1.png</key>
-            <key type="filename">../images/explosion2.png</key>
-            <key type="filename">../images/explosion3.png</key>
-            <key type="filename">../images/explosion4.png</key>
-            <key type="filename">../images/explosion5.png</key>
-            <key type="filename">../images/explosion6.png</key>
-            <key type="filename">../images/explosion7.png</key>
-            <key type="filename">../images/plane1.png</key>
-            <key type="filename">../images/plane2.png</key>
-            <key type="filename">../images/plane3.png</key>
-            <key type="filename">../images/planeflash1.png</key>
-            <key type="filename">../images/planeflash2.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>16,16,33,33</rect>
-                <key>scale9Paddings</key>
-                <rect>16,16,33,33</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
             <key type="filename">../images/island.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -283,77 +221,27 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../images/restartButton.png</key>
-            <key type="filename">../images/startButton.png</key>
+            <key type="filename">../images/plane.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>50,15,100,30</rect>
+                <rect>16,16,33,33</rect>
                 <key>scale9Paddings</key>
-                <rect>50,15,100,30</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">../images/smallexplosion1.png</key>
-            <key type="filename">../images/smallexplosion2.png</key>
-            <key type="filename">../images/smallexplosion3.png</key>
-            <key type="filename">../images/smallexplosion4.png</key>
-            <key type="filename">../images/smallexplosion5.png</key>
-            <key type="filename">../images/smallexplosion6.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>8,8,16,16</rect>
-                <key>scale9Paddings</key>
-                <rect>8,8,16,16</rect>
+                <rect>16,16,33,33</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../images/restartButton.png</filename>
-            <filename>../images/startButton.png</filename>
+            <filename>../images/plane.png</filename>
+            <filename>../images/RestartButton.png</filename>
+            <filename>../images/StartButton.png</filename>
             <filename>../images/cloud.png</filename>
             <filename>../images/island.png</filename>
-            <filename>../images/plane1.png</filename>
-            <filename>../images/plane2.png</filename>
-            <filename>../images/plane3.png</filename>
-            <filename>../images/coin01.png</filename>
-            <filename>../images/coin02.png</filename>
-            <filename>../images/coin03.png</filename>
-            <filename>../images/coin04.png</filename>
-            <filename>../images/coin05.png</filename>
-            <filename>../images/coin06.png</filename>
-            <filename>../images/coin07.png</filename>
-            <filename>../images/coin08.png</filename>
-            <filename>../images/coin09.png</filename>
-            <filename>../images/coin10.png</filename>
-            <filename>../images/explosion1.png</filename>
-            <filename>../images/explosion2.png</filename>
-            <filename>../images/explosion3.png</filename>
-            <filename>../images/explosion4.png</filename>
-            <filename>../images/explosion5.png</filename>
-            <filename>../images/explosion6.png</filename>
-            <filename>../images/explosion7.png</filename>
-            <filename>../images/planeflash1.png</filename>
-            <filename>../images/planeflash2.png</filename>
-            <filename>../images/bullet.png</filename>
-            <filename>../images/enemy1.png</filename>
-            <filename>../images/enemy2.png</filename>
-            <filename>../images/enemy3.png</filename>
-            <filename>../images/smallexplosion1.png</filename>
-            <filename>../images/smallexplosion2.png</filename>
-            <filename>../images/smallexplosion3.png</filename>
-            <filename>../images/smallexplosion4.png</filename>
-            <filename>../images/smallexplosion5.png</filename>
-            <filename>../images/smallexplosion6.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
