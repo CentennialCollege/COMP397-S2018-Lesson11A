@@ -57,6 +57,7 @@
         if (CurrentScene) {
             CurrentScene.Destroy();
             stage.removeChild(CurrentScene);
+            createjs.Sound.stop(); // stop all sounds
         }
         switch (CurrentState) {
             case config.Scene.START:

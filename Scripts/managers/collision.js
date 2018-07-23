@@ -12,11 +12,18 @@ var managers;
                     switch (object2.name) {
                         case "island":
                             var yaySound = createjs.Sound.play("yay");
-                            yaySound.volume = 0.2;
+                            yaySound.volume = 0.1;
+                            managers.Game.ScoreBoardManager.Score += 100;
                             break;
                         case "cloud":
                             var thunderSound = createjs.Sound.play("thunder");
-                            thunderSound.volume = 0.2;
+                            thunderSound.volume = 0.1;
+                            managers.Game.ScoreBoardManager.Lives -= 1;
+                            // check if lives falls below 1
+                            if (managers.Game.ScoreBoardManager.Lives <= 0) {
+                                // change scenes to the END scene
+                                managers.Game.CurrentState = config.Scene.END;
+                            }
                             break;
                     }
                 }
