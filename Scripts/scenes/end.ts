@@ -1,8 +1,9 @@
 module scenes {
     export class End extends objects.Scene {
         // member variables
-        private _endLabel: objects.Label;
-        private _backButton: objects.Button;
+        private _gameOverLabel: objects.Label;
+        private _restartButton: objects.Button;
+        private _ocean: objects.Ocean;
 
         // constructors
         constructor() {
@@ -15,15 +16,16 @@ module scenes {
 
         // public methods
         public Start():void {
+            this._ocean = new objects.Ocean();
 
-            this._endLabel = new objects.Label("Game Over!", "60px", "Consolas", "#000000", 320, 240, true);
-            this._backButton = new objects.Button("BackButton", 320, 360, true);
+            this._gameOverLabel = new objects.Label("Game Over!", "60px", "Consolas", "#FFFF00", 320, 240, true);
+            this._restartButton = new objects.Button("RestartButton", 320, 360, true);
 
             this.Main();
         }
 
         public Update():void {
-
+            this._ocean.Update();
         }
 
         public Reset():void {
@@ -36,10 +38,14 @@ module scenes {
 
         public Main():void {
             console.log(`Starting - END SCENE`);
-            this.addChild(this._endLabel);
-            this.addChild(this._backButton);
 
-            this._backButton.on("click", function(){
+            this.addChild(this._ocean);
+
+            this.addChild(this._gameOverLabel);
+            this.addChild(this._restartButton);
+
+            this._restartButton.on("click", function(){
+                managers.Game.ScoreBoardManager.Reset();
                 managers.Game.CurrentState = config.Scene.PLAY;
             }, this);
         }
