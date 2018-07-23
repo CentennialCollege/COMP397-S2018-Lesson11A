@@ -3,8 +3,10 @@ module managers {
         // member variables
         private _lives:number;
         private _score:number;
+        private _highScore:number;
         private _livesLabel:objects.Label;
         private _scoreLabel:objects.Label;
+        private _highScoreLabel: objects.Label;
 
         // properties
 
@@ -28,6 +30,16 @@ module managers {
             return this._scoreLabel;
         }
 
+        /**
+         * Returns a reference to the HighScoreLabel object
+         *
+         * @readonly
+         * @type {objects.Label}
+         */
+        get HighScoreLabel():objects.Label {
+            return this._highScoreLabel;
+        }
+
         get Lives():number {
             return this._lives;
         }
@@ -45,6 +57,15 @@ module managers {
             this._score = newValue;
             this.ScoreLabel.text = "Score: " + this._score;
         }
+
+        get HighScore():number {
+            return this._highScore;
+        }
+
+        set HighScore(newValue:number) {
+            this._highScore = newValue;
+            this.HighScoreLabel.text = "High Score: " + this._highScore;
+        }
         
         // constructor
         constructor() {
@@ -56,8 +77,13 @@ module managers {
 
         // public methods
         public Start():void {
+        
             this._livesLabel = new objects.Label("Lives: 99", "30px", "Consolas","#FFFF00", 20, 20, false);
             this._scoreLabel = new objects.Label("Score: 99999", "30px", "Consolas", "#FFFF00", 370, 20, false);
+            this._highScoreLabel = new objects.Label("High Score: 99999", "60px", "Consolas", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
+            
+            this.HighScore = 0;
+
             this.Reset();
         }
 
