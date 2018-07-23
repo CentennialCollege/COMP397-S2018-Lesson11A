@@ -82,6 +82,9 @@ module scenes {
             for (const cloud of this._clouds) {
                 this.addChild(cloud);
             }
+
+            this.addChild(managers.Game.ScoreBoardManager.LivesLabel);
+            this.addChild(managers.Game.ScoreBoardManager.ScoreLabel);
         }
     }
 }

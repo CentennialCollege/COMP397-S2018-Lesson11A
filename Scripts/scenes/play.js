@@ -68,6 +68,8 @@ var scenes;
                 var cloud = _a[_i];
                 this.addChild(cloud);
             }
+            this.addChild(managers.Game.ScoreBoardManager.LivesLabel);
+            this.addChild(managers.Game.ScoreBoardManager.ScoreLabel);
         };
         return Play;
     }(objects.Scene));

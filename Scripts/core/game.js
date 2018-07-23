@@ -7,6 +7,7 @@
     var AssetManager;
     var CurrentScene;
     var CurrentState;
+    var ScoreBoardManager;
     var Manifest = [
         { id: "StartButton", src: "/Assets/images/StartButton.png" },
         { id: "NextButton", src: "/Assets/images/NextButton.png" },
@@ -37,6 +38,9 @@
         createjs.Ticker.on("tick", Update);
         CurrentState = config.Scene.START;
         managers.Game.CurrentState = CurrentState;
+        // setup scoreboard manager
+        ScoreBoardManager = new managers.ScoreBoard();
+        managers.Game.ScoreBoardManager = ScoreBoardManager;
         // This is where all the magic happens
         Main();
     }

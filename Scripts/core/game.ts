@@ -7,6 +7,7 @@
     let AssetManager: createjs.LoadQueue;
     let CurrentScene: objects.Scene;
     let CurrentState: config.Scene;
+    let ScoreBoardManager: managers.ScoreBoard;
 
     let Manifest = [
         {id: "StartButton", src:"/Assets/images/StartButton.png"},
@@ -44,6 +45,10 @@
 
         CurrentState = config.Scene.START;
         managers.Game.CurrentState = CurrentState;
+
+        // setup scoreboard manager
+        ScoreBoardManager = new managers.ScoreBoard();
+        managers.Game.ScoreBoardManager = ScoreBoardManager;
 
         // This is where all the magic happens
         Main();
